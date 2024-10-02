@@ -1,0 +1,43 @@
+.icono {
+  margin-right: 12px;
+}
+
+.viewButton {
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: calc(100% + 10px);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+  background-color: white;
+  border-radius: 50px;
+  padding: 3px;
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.201));
+  transition: filter 0.5s;
+}
+
+/* .viewButton:hover {
+  filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.601));
+} */
+
+.hyperspan {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+a {
+  position: inherit;
+  height: 100%;
+  width: 100%;
+}
+.col-4 h2 {
+  display: inline;
+  font-size: 18pt;
+  font-weight: 400;
+  color: black;
+}
