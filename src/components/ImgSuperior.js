@@ -8,13 +8,17 @@ function ImgSuperior() {
     <div className="image-container">
       <img className="recorte" src={ChihuahuaFoto} alt="" />
       <img src={Gradiente} className="recorte gradiente" />
-      <div className="text-container">
-        <h1>
-          Bienvenido al centro <span>histórico</span>
-        </h1>
-      </div>
-      <div className="buttons-container">
-        <Botones />
+      <div className="flex flex-col text-container">
+        <div className="text-center">
+          <h1 className="text-white">
+            Bienvenido al centro <span>histórico</span>
+          </h1>
+        </div>
+        <div>
+          <div className="flex justify-center items-center mt-6">
+            <Botones />
+          </div>
+        </div>
       </div>
     </div>
   );

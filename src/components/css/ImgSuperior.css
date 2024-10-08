@@ -37,7 +37,6 @@
   width: 100%; /* Ensure the buttons are centered */
   display: flex;
   justify-content: center;
-  color: white;
 }
 
 .text-container h1 {

@@ -1,10 +1,12 @@
 import Header from "./components/Header";
+import ImgSuperior from "./components/ImgSuperior";
+import Section from "./components/Seccion";
 
 function App() {
   return (
     <div>
-      <Header />
-      Hola
+      <ImgSuperior />
+      <Section titulo="cafeterias" />
     </div>
   );
 }

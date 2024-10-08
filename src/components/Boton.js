@@ -6,13 +6,12 @@ import {
   IconBuildingCastle,
 } from "@tabler/icons-react";
 import "./css/Boton.css";
-import "bootstrap/dist/css/bootstrap.css";
 
 const CreateButtons = ({ icon: Icon, label, link }) => (
-  <div className="col-4 d-flex justify-content-center">
+  <div className="flex w-4/12 h-10 justify-center">
     <div className="viewButton">
       <Icon size="23" color="black" className="icono" />
-      <h2>{label}</h2>
+      <h2 className="">{label}</h2>
       <span className="hyperspan">
         <a href={link}></a>
       </span>
@@ -22,8 +21,8 @@ const CreateButtons = ({ icon: Icon, label, link }) => (
 
 function Botones() {
   return (
-    <div className="container ">
-      <div className="row ">
+    <div className="container">
+      <div className="flex justify-center text-center">
         <CreateButtons icon={IconCoffee} label="Cafeterías" link="Alink.com" />
         <CreateButtons
           icon={IconBeerFilled}
