@@ -5,12 +5,15 @@ import {
   IconBeerFilled,
   IconBuildingCastle,
 } from "@tabler/icons-react";
-import "./css/Boton.css";
 
 const CreateButtons = ({ icon: Icon, label, link }) => (
-  <div className="flex w-4/12 h-10 justify-center">
-    <div className="viewButton">
-      <Icon size="23" color="black" className="icono" />
+  <div className="flex w-4/12 h-10 justify-center ">
+    <div className="group flex flex-row items-center justify-around bg-slate-100 px-8 py-6 font-normal text-2xl  rounded-2xl shadow-md hover:shadow-2xl hover:scale-110 transition-all hover:-rotate-2 duration-200">
+      <Icon
+        size="23"
+        color="black"
+        className="mr-2 group-hover:scale-150 group-hover:rotate-12 transition-all"
+      />
       <h2 className="">{label}</h2>
       <span className="hyperspan">
         <a href={link}></a>
