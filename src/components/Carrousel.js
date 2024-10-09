@@ -27,17 +27,20 @@ function Carrousel() {
         {datos.map((d) => (
           <div
             key={d.id}
-            className="relative bg-red-200 text-black rounded-xl shadow-lg h-96"
+            className="relative bg-red-200 text-black rounded-xl shadow-lg h-96 hover:scale-105 transition-all duration-150"
           >
             <img
               src={d.imageUrl}
               alt={d.description}
-              className="h-full rounded-xl object-cover"
+              className="h-full rounded-xl object-cover "
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-cyan-500 via-transparent to-transparent rounded-xl"></div>{" "}
-            <div className="absolute text-gray-600 w-3/4 bg-slate-100">
-              <h2>{d.description}</h2>
-            </div>
+            <div className="absolute flex items-end justify-center inset-0 bg-gradient-to-t from-cyan-500 via-transparent to-transparent rounded-xl">
+              <div>
+                <h1 className="bg-gray-100 px-3 py-2 my-20 rounded-xl hover:shadow-xl transition-all hover:transform hover:scale-110 ">
+                  {d.description}
+                </h1>
+              </div>
+            </div>{" "}
           </div>
         ))}
       </div>
